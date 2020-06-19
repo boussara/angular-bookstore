@@ -10,8 +10,7 @@
   <tbody>
     <tr *ngFor="let book of books">
       <th>
-
-      <img src="http://placehold.it/250x300" height="50px" />
+      <img [src]="book.imageUrl" height="50"/>
       </th>
       <th>{{book.name}}</th>
       <th>{{book.description}}</th>
